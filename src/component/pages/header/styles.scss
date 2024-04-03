@@ -1,0 +1,46 @@
+header {
+    font-size: 16px;
+
+    .navbar {
+        z-index: 999;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+            rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    }
+
+    .nav-link,
+    .nav-link.active {
+        // color: var(--theme-secondayColor);
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            visibility: hidden;
+            width: 0px;
+            transition: all 0.3s ease-in-out 0s;
+            background-color: var(--theme-primaryColor);
+        }
+
+        &:hover {
+            color: var(--theme-primaryColor);
+
+            &::before {
+                visibility: visible;
+                width: 100%;
+            }
+        }
+    }
+
+    .nav-link.active {
+        color: var(--theme-primaryColor) !important;
+
+        &::before {
+            visibility: visible;
+            width: 100%;
+        }
+    }
+}

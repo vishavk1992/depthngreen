@@ -1,0 +1,28 @@
+/* .top-row{
+    text-align: center;
+    background-color: rgb(140, 45, 61);
+    color: #fff;
+    margin: 0;
+    padding: 5px;
+}
+.row-2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-bar ul li{
+    padding: 10px;
+    list-style: none;
+}
+.logo img{
+    width: 50%;
+}
+.logo{
+    width: 20%;
+} */

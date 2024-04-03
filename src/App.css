@@ -1,0 +1,60 @@
+ 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+
+    html,
+    #root,
+    #page-wrapper {
+        --theme-primaryColor: #74ab50;
+        --theme-darkColor: #3e4826;
+        --theme-secondayColor: #0f0101;
+    }
+
+    .primary-clr {
+        color: var(--theme-primaryColor);
+    }
+
+    .secondary-clr {
+        color: var(--theme-secondayColor);
+    }
+
+    .dark-clr {
+        color: var(--theme-darkColor);
+    }
+
+    .bg-primary-clr {
+        background-color: var(--theme-primaryColor);
+    }
+
+    .bg-secondary-clr {
+        background-color: var(--theme-secondayColor);
+    }
+
+    .bg-dark-clr {
+        background-color: var(--theme-darkColor);
+    }
+}
+
+
+@layer component{
+    .flex-container {
+        @apply flex  items-center;
+    }
+    .page-navbar {
+        @apply fixed w-full flex flex-wrap items-center justify-between py-2 navbar-expand-lg navbar-light;
+    }
+    .nav-menu {
+        @apply p-0;
+    }
+    .vertical-navs {
+        @apply nav-link my-0 pl-3 flex items-center;
+    }
+}
+
+/* .flex-container{
+    display: flex;
+    align-items: center;
+} */
