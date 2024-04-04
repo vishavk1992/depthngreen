@@ -4,7 +4,6 @@
 @tailwind utilities;
 
 @layer utilities {
-
     html,
     #root,
     #page-wrapper {
@@ -39,22 +38,20 @@
 }
 
 
-@layer component{
+@layer components {
+   
     .flex-container {
-        @apply flex  items-center;
+        @apply flex items-center;
     }
-    .page-navbar {
+    /* .vertical-navs {
+        @apply nav-link my-0 pl-3 flex items-center;
+    } */
+    /* .page-navbar {
         @apply fixed w-full flex flex-wrap items-center justify-between py-2 navbar-expand-lg navbar-light;
-    }
+    } */
+
     .nav-menu {
         @apply p-0;
     }
-    .vertical-navs {
-        @apply nav-link my-0 pl-3 flex items-center;
-    }
+  
 }
-
-/* .flex-container{
-    display: flex;
-    align-items: center;
-} */

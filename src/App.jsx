@@ -1,12 +1,12 @@
 import './App.css'
-import Header from './component/pages/header'
-import Home from './component/pages/Home'
+import Header from './components/header'
+import Home from './components/Home'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Products from './component/pages/Products';
-import Catering from './component/pages/Catering';
-import About from './component/pages/About';
-import Cafe from './component/pages/Cafe'
-import Contact from './component/pages/contactus';
+import Products from './components/Products';
+import Catering from './components/Catering';
+import About from './components/About';
+import Cafe from './components/Cafe'
+import Contact from './components/contactus';
 function App() {
 
 

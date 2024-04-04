@@ -19,8 +19,7 @@ const Header = () => {
                         <a to="/" className="text-xl pr-2">
                             <img src='/static/logo192.png' alt="Depth 'N Green" className="h-20" />
                         </a>
-                        <div className="collapse navbar-collapse"
-                            id="navbarSupportedContent1">
+                        <div>
                             <ul className='navbar-nav flex flex-wrap list-style-none mx-auto '>
                                 <li className='nav-item p-2'>
                                     <Link to="/" className='nav-link nav-menu'>Home</Link>
@@ -44,6 +43,7 @@ const Header = () => {
                         </div>
                         <div>                           
                             <span className="mr-2 font-bold">Cart</span>
+
                         </div>
                     </div>
                 </nav>
