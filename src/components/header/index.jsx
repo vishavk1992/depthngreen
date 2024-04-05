@@ -10,16 +10,14 @@ const Header = () => {
                 <div className='text-center top-nav-alert bg-secondary-clr py-3 text-white'>
                     <p>
                         NOW OPEN in CAMBRIDGE, MA! Order Online for Quick & Easy Pickup!
-
                     </p>
                 </div>
                 <nav className={classes}>
                     <div className='container-fluid flex flex-wrap items-center  justify-between px-6 '>
-
                         <a to="/" className="text-xl pr-2">
                             <img src='/static/logo192.png' alt="Depth 'N Green" className="h-20" />
                         </a>
-                        <div>
+                        <div className=" navbar-collapse items-center">
                             <ul className='navbar-nav flex flex-wrap list-style-none mx-auto '>
                                 <li className='nav-item p-2'>
                                     <Link to="/" className='nav-link nav-menu'>Home</Link>
