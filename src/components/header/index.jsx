@@ -1,11 +1,27 @@
 import React from 'react'
 import './styles.scss'
 import { Link, Outlet } from "react-router-dom";
+import { useState , useEffect } from 'react';
 const Header = () => {
 
-    const classes = `page-navbar navbar bg-white py-0 navbar-expand-lg navbar-light`;
+    const [sticky, setSticky] = useState("");
+
+    useEffect(() => {
+        window.addEventListener("scroll", isSticky);
+        return () => {
+          window.removeEventListener("scroll", isSticky);
+        };
+      }, []);
+
+    const isSticky = () => {
+        const scrollTop = window.scrollY;
+        const stickyClass = scrollTop >= 10 ? "is-sticky" : "";
+        setSticky(stickyClass);
+      };
+
+    const classes = `page-navbar navbar bg-white py-0 navbar-expand-lg navbar-light ${sticky}`;
     return (
-        <div>
+        <div className='header-content'>
             <header>
                 <div className='text-center top-nav-alert bg-secondary-clr py-3 text-white'>
                     <p>
@@ -13,7 +29,7 @@ const Header = () => {
                     </p>
                 </div>
                 <nav className={classes}>
-                    <div className='container-fluid flex flex-wrap items-center  justify-between px-6 '>
+                    <div className='container-fluid w-full flex flex-wrap items-center  justify-between px-6 '>
                         <a to="/" className="text-xl pr-2">
                             <img src='/static/logo192.png' alt="Depth 'N Green" className="h-20" />
                         </a>

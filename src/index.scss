@@ -69,5 +69,20 @@ body {
         rgb(60 64 67 / 15%) 0px 2px 6px 2px;
     }
   }
+  footer {
+    position: fixed;
+    background-color: #fff;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+
+    a {
+      color: var(--theme-primaryColor);
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 
 }

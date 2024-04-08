@@ -129,10 +129,10 @@ const Home = () => {
 
           <div className="text-center mt-5 ">
             <Link
-              to="/catering"
+              to="/products"
               className="mt-4 primary-clr pb-6 site-btn view-btn"
             >
-              View All
+              VIEW All
             </Link>
           </div>
 
@@ -143,7 +143,7 @@ const Home = () => {
         <div className='container mx-auto product-cards mt-10 mb-20 pb-8'>
           <div className=' text-center py-3'>
             <h3 className=' text-3xl font-bold mb-8 main-h'>
-              FEATURED PRODUCTS
+              CATERING PRODUCTS
             </h3>
           </div>
           <div className='grid lg:grid-cols-3 mg:grid-cols-2 sm:grid-cols-1 box-gap mb-2 gap-4'>
@@ -174,7 +174,7 @@ const Home = () => {
               to="/catering"
               className="mt-4 primary-clr pb-6 site-btn view-btn"
             >
-              View All
+              VIEW All
             </Link>
           </div>
         </div>

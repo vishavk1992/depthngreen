@@ -39,19 +39,22 @@
 
 
 @layer components {
-   
+    .page-navbar {
+        @apply fixed w-full flex flex-wrap items-center justify-between py-2  ;
+    }
     .flex-container {
         @apply flex items-center;
     }
-    /* .vertical-navs {
+   
+    .vertical-navs {
         @apply nav-link my-0 pl-3 flex items-center;
-    } */
-    /* .page-navbar {
-        @apply fixed w-full flex flex-wrap items-center justify-between py-2 navbar-expand-lg navbar-light;
-    } */
-
+    }
+    
     .nav-menu {
         @apply p-0;
     }
+    
+    
+
   
 }

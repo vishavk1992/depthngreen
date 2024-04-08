@@ -2,11 +2,13 @@ import './index.scss'
 import Header from './components/header'
 import Home from './components/Home'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Products from './components/Products';
+import Products from './components/allProducts';
 import Catering from './components/Catering';
 import About from './components/About';
 import Cafe from './components/Cafe'
 import Contact from './components/contactus';
+import Footer from './components/footer';
+
 function App() {
 
 
@@ -22,6 +24,7 @@ function App() {
           <Route path="/products" element={<Products />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     
 
