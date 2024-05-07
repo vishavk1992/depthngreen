@@ -13,7 +13,8 @@ Currently, two official plugins are available:
 - Install and Configure Tailwind 
 - Install `react-icons`, `react-router-dom`, `axios`
 - Fetch API data with Axios
-- NPM RUN DEV
+- Added Media Query to make it responsive on small devices
+- To run on localhost : NPM RUN DEV
 
 ## Usage
 1. Clone the repository.
