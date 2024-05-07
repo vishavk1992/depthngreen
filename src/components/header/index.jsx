@@ -1,6 +1,6 @@
 import React from 'react'
 import './styles.scss'
-import { Link, Outlet } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useState, useEffect } from 'react';
 const Header = () => {
 
@@ -30,16 +30,16 @@ const Header = () => {
                     </p>
                 </div>
                 <nav className={classes}>
-                    <div className='container-fluid w-full flex flex-wrap items-center  justify-between px-6 '>
+                    <div className='container-fluid w-full  flex flex-wrap  items-center  justify-between px-6 '>
                         <a to="/" className="text-xl pr-2">
-                            <img src='/static/logo192.png' alt="Depth 'N Green" className="h-20" />
+                            <img src='/static/logo192.png' alt="Depth 'N Green" className="h-20 height "  />
                         </a>
                         <div className=" navbar-collapse items-center">
                             <ul className='navbar-nav flex flex-wrap list-style-none mx-auto '>
                                 <li className="nav-item p-2">
                                     <Link
                                         to="/"
-                                        className={`nav-link nav-menu ${pathName === "/" ? "active" : ""
+                                        className={`nav-link nav-menu ${pathName === "/" ? "active" : " "
                                             }`}
                                     >
                                         Home
@@ -48,7 +48,7 @@ const Header = () => {
                                 <li className="nav-item p-2">
                                     <Link
                                         to="/cafe"
-                                        className={`nav-link nav-menu ${pathName === "cafe" ? "active" : ""
+                                        className={`nav-link nav-menu ${pathName === "cafe" ? "active" : " "
                                             }`}
                                     >
                                         Cafe
@@ -99,7 +99,7 @@ const Header = () => {
                             </ul>
                         </div>
                         <div>
-                            <span className="mr-2 font-bold">Cart</span>
+                            <span className="mr-2 visibility font-semibold">CART</span>
 
                         </div>
                     </div>

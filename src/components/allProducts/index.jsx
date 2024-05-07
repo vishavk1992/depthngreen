@@ -32,7 +32,7 @@ const Products = () => {
         <section>
           <div className='container mx-auto'>
             <div className='text-center py-3 '>
-              <h3 className='text-3xl font-bold mb-8  main-h'>Our Collection</h3>
+              <h3 className='text-3xl font-bold mb-8  main-h'>Our Products</h3>
             </div>
             <div className="grid lg:grid-cols-3 gap-4 mg:grid-cols-2 sm:grid-cols-1 box-gap mb-2">
 
