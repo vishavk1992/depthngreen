@@ -23,6 +23,8 @@ Currently, two official plugins are available:
 ## Live Demo
 This project is deployed on Netlify. [Check it out here](https://depthngreen.netlify.app/).
 
+https://depthngreen.netlify.app/
+
 ## Screenshot
 ![Screenshot 2024-04-29 164320](https://github.com/vishavk1992/depthngreen/assets/148455293/f88c6e9c-2aac-4d6c-8224-a7f6f8cbd039)
 
